@@ -168,7 +168,7 @@ namespace WindowsFormsApp1
             button4.Enabled = true;
             panel1.Enabled = false;
             panel1.Visible = false;
-            newdestdir = destinationDir + "/" + "temp";
+            newdestdir = destinationDir + "/" + "temp" + "/";
             Directory.CreateDirectory(newdestdir);
             {
 
