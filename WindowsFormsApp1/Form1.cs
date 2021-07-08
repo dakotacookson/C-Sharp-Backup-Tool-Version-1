@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.IO.Compression;
-using System.Text.RegularExpressions;
-using System.Threading;
 using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
@@ -70,14 +68,12 @@ namespace WindowsFormsApp1
         }
         private void button3_Click(object sender, EventArgs e)
         {
-
             sourceDir = textBox1.Text;
             destinationDir = textBox2.Text;
             if (sourceDir.Length >= 1 && destinationDir.Length >= 1)
             {
                 panel1.Enabled = true;
                 panel1.Visible = true;
-
                 progressBar1.Value = 0;
 
             }
@@ -89,7 +85,6 @@ namespace WindowsFormsApp1
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -122,8 +117,6 @@ namespace WindowsFormsApp1
                 }
 
             }
-
-
             sourceDir = textBox1.Text;
             destinationDir = textBox2.Text;
         }
@@ -175,29 +168,18 @@ namespace WindowsFormsApp1
             button4.Enabled = true;
             panel1.Enabled = false;
             panel1.Visible = false;
-
             newdestdir = destinationDir + "/" + "temp";
             Directory.CreateDirectory(newdestdir);
             {
-                //Thread t = new Thread(new ThreadStart(NewMethod));
-                //t.Start();
-                //while (t.IsAlive)
-                //{
-                //    Application.DoEvents();
-                //    Thread.Sleep(100);
-                //}
-                //void NewMethod()
+
                 {
                     foreach (string d in Directory.GetDirectories(sourceDir, "*",
                         SearchOption.AllDirectories))
                         Directory.CreateDirectory(d.Replace(sourceDir, newdestdir));
-
                     //Copy all the files & Replaces any files with the same name
                     foreach (string f in Directory.GetFiles(sourceDir, "*.*",
                         SearchOption.AllDirectories))
                         File.Copy(f, f.Replace(sourceDir, newdestdir), true);
-
-
 
                     string startPath = destinationDir + "/" + "temp";
                     string zipPath = destinationDir + "/" + backupname + ".zip";
