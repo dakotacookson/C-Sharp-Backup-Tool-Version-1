@@ -1,0 +1,30 @@
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Zazi\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Zazi\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+\\TRUENAS\FileServer\NETWORK SERVER\EXTRA STORAGE\CODE\c# forms\TRANSFER AND BACKUP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
