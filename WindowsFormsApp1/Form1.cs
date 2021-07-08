@@ -167,10 +167,12 @@ namespace WindowsFormsApp1
                 sw.WriteLine(backupname + "SourceName:" + "*" + sourceDir);
             using (StreamWriter sw = File.AppendText(configPath))
                 sw.WriteLine(backupname + "DestinationName:" + "*" + destinationDir);
+            button4.Enabled = false;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            button4.Enabled = true;
             panel1.Enabled = false;
             panel1.Visible = false;
 
@@ -223,8 +225,14 @@ namespace WindowsFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
+            button4.Enabled = true;
             panel1.Visible = false;
             panel1.Enabled = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            File.Delete(configPath);
         }
     }
 }

@@ -41,11 +41,12 @@ namespace WindowsFormsApp1
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,11 +93,11 @@ namespace WindowsFormsApp1
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.button3.Location = new System.Drawing.Point(295, 56);
+            this.button3.Location = new System.Drawing.Point(299, 40);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(196, 118);
             this.button3.TabIndex = 4;
-            this.button3.Text = "File Transfer";
+            this.button3.Text = "Save Config";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -134,34 +135,16 @@ namespace WindowsFormsApp1
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // richTextBox1
+            // button6
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(64, 89);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(466, 29);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(64, 144);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(198, 63);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Save Name";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(315, 144);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 63);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Run Backup";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(550, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(59, 29);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Cancel";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label1
             // 
@@ -174,22 +157,51 @@ namespace WindowsFormsApp1
             this.label1.Text = "Backup Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button6
+            // button5
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(550, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(59, 29);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Cancel";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button5.Location = new System.Drawing.Point(315, 144);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(200, 63);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Run Backup";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(64, 144);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(198, 63);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Save Name";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(64, 89);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(466, 29);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(139, 13);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(139, 23);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "Delete All Configs";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.progressBar1);
@@ -225,6 +237,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 
