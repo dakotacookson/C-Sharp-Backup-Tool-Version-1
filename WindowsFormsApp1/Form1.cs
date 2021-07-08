@@ -89,12 +89,19 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            backupname = comboBox1.Text.ToString();
 
             if (File.Exists(configPath))
 
             {
                 foreach (string line in File.ReadLines(configPath))
                 {
+                    if (line.Contains(backupname) && line.Contains("BackupName:"))
+                    {
+                        var lineset = line.Split('*');
+                        var lineset2 = lineset[1].ToString();
+                        richTextBox1.Text = lineset2;
+                    }
                     if (line.Contains(backupname) && line.Contains("SourceName:"))
                     {
                         var lineset = line.Split('*');
@@ -108,12 +115,7 @@ namespace WindowsFormsApp1
                         var lineset2 = lineset[1].ToString();
                         textBox2.Text = lineset2;
                     }
-                    if (line.Contains(backupname) && line.Contains("BackupName:"))
-                    {
-                        var lineset = line.Split('*');
-                        var lineset2 = lineset[1].ToString();
-                        richTextBox1.Text = lineset2;
-                    }
+
                 }
 
             }
@@ -154,6 +156,20 @@ namespace WindowsFormsApp1
             sourceDir = textBox1.Text;
             destinationDir = textBox2.Text;
             backupname = richTextBox1.Text;
+
+
+            if (File.Exists(configPath))
+
+            {
+                foreach (string line in File.ReadLines(configPath))
+                {
+                    if (line.Contains(backupname) && line.Contains("BackupName: "))
+                    {
+                        MessageBox.Show("Plese Enter a Distinct Backup Name");
+                        return;
+                    }
+                }
+            }
             using (StreamWriter sw = File.AppendText(configPath))
                 sw.WriteLine("BackupName: " + "*" + backupname);
             using (StreamWriter sw = File.AppendText(configPath))
@@ -161,8 +177,22 @@ namespace WindowsFormsApp1
             using (StreamWriter sw = File.AppendText(configPath))
                 sw.WriteLine(backupname + "DestinationName:" + "*" + destinationDir);
             button4.Enabled = false;
-        }
 
+            if (File.Exists(configPath))
+            {
+                comboBox1.Items.Clear();
+                foreach (string line in File.ReadLines(configPath))
+                {
+                    if (line.Contains("BackupName:"))
+                    {
+                        var lineset = line.Split('*');
+                        var lineset2 = lineset[1].ToString();
+                        
+                        comboBox1.Items.Add(lineset2);
+                    }
+                }
+            }
+        }
         private void button5_Click(object sender, EventArgs e)
         {
             button4.Enabled = true;
@@ -171,12 +201,10 @@ namespace WindowsFormsApp1
             newdestdir = destinationDir + "/" + "temp" + "/";
             Directory.CreateDirectory(newdestdir);
             {
-
                 {
                     foreach (string d in Directory.GetDirectories(sourceDir, "*",
                         SearchOption.AllDirectories))
                         Directory.CreateDirectory(d.Replace(sourceDir, newdestdir));
-                    //Copy all the files & Replaces any files with the same name
                     foreach (string f in Directory.GetFiles(sourceDir, "*.*",
                         SearchOption.AllDirectories))
                         File.Copy(f, f.Replace(sourceDir, newdestdir), true);
@@ -187,35 +215,43 @@ namespace WindowsFormsApp1
                     {
                         File.Delete(zipPath);
                     }
-
                     ZipFile.CreateFromDirectory(startPath, zipPath);
                     Directory.Delete(newdestdir, true);
                 }
                 progressBar1.Value = 100;
-
             }
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             button4.Enabled = true;
             panel1.Visible = false;
             panel1.Enabled = false;
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
-            File.Delete(configPath);
+            if (File.Exists(configPath))
+            {
+                File.Delete(configPath);
+                File.Create("C:/Users/" + Environment.UserName.ToString() + "/saved_backups.txt");
+                button7.Enabled = false;
+                comboBox1.Enabled = false;
+                comboBox1.Visible = false;
+                button1.Enabled = false;
+                button2.Enabled = false;
+                button3.Enabled = false;
+                textBox1.Enabled = false;
+                textBox2.Enabled = false;
+                MessageBox.Show("Please Restart the Program");
+            }
         }
     }
 }
+
 
